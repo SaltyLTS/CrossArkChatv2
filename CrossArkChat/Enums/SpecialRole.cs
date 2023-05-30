@@ -1,0 +1,44 @@
+﻿namespace CrossArkChat.Enums
+{
+    public enum SpecialRole
+    {
+        PurgeMessage,
+        StartChat,
+        StopChat,
+        RestartChat,
+        ClearChat,
+        RebootProgram,
+        Rconcommand,
+        AllowPlayerToJoinNoCheck,
+        BanPlayer,
+        Broadcast,
+        DestroyAll,
+        DestroyAllEnemies,
+        DestroyStructures,
+        DestroyWildDinos,
+        DisallowPlayerToJoinNoCheck,
+        DoExit,
+        GetChat,
+        GiveItemNumToPlayer,
+        GiveExpToPlayer,
+        KickPlayer,
+        KillPlayer,
+        ListPlayers,
+        PlayersOnly,
+        RenamePlayer,
+        RenameTribe,
+        SaveWorld,
+        ServerChat,
+        ServerChatTo,
+        ServerChatToPlayer,
+        SetMessageOfTheDay,
+        SetTimeOfDay,
+        ShowMessageOfTheDay,
+        Slomo,
+        UnBanPlayer,
+        ServerInfo,
+        ServerList,
+        ServerBlend
+    }
+}
+

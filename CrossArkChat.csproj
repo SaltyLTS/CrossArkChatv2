@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4AAF10B2-C44F-41BC-AAEF-AC8FF9B06F7B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>CrossArkChat</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="Discord.Net.Commands" />
+    <Reference Include="Discord.Net.Core" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="Discord.Net.WebSocket" />
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions" />
+    <Reference Include="Discord.Net.Rest" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Collections.Concurrent" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Threading.Timer" />
+    <Reference Include="QueryMaster" />
+    <Reference Include="System.Net.Primitives" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection" />
+    <Reference Include="Discord.Addons.Interactive" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.IO.FileSystem" />
+    <Reference Include="System.Console" />
+    <Reference Include="Microsoft.Extensions.Configuration" />
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions" />
+    <Reference Include="Microsoft.Extensions.Configuration.Json" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="Microsoft.Extensions.Configuration.Binder" />
+    <Reference Include="System.Diagnostics.Process" />
+    <Compile Include="Global.cs" />
+    <Compile Include="CrossArkChat\RequireRoleAttribute.cs" />
+    <Compile Include="CrossArkChat\Program.cs" />
+    <Compile Include="CrossArkChat\ListPlayersItem.cs" />
+    <Compile Include="CrossArkChat\CommandHandler.cs" />
+    <Compile Include="CrossArkChat\CrossArkChatService.cs" />
+    <Compile Include="CrossArkChat\CrossArkChatUpdaterService.cs" />
+    <Compile Include="CrossArkChat\CrossDiscordChatHandler.cs" />
+    <Compile Include="CrossArkChat\DiscordStartupService.cs" />
+    <Compile Include="CrossArkChat\ListPlayersService.cs" />
+    <Compile Include="CrossArkChat\LoggingService.cs" />
+    <Compile Include="CrossArkChat\PlayerCountService.cs" />
+    <Compile Include="CrossArkChat\SendTimeCommandService.cs" />
+    <Compile Include="CrossArkChat\TimedCommandService.cs" />
+    <Compile Include="CrossArkChat\EmbedTribeLogsItem.cs" />
+    <Compile Include="CrossArkChat\ServerItem.cs" />
+    <Compile Include="CrossArkChat\TimedCommand.cs" />
+    <Compile Include="CrossArkChat\TimedCommandItem.cs" />
+    <Compile Include="CrossArkChat\TribeItem.cs" />
+    <Compile Include="CrossArkChat\DiscordRoleSettings.cs" />
+    <Compile Include="CrossArkChat\GeneralSettings.cs" />
+    <Compile Include="CrossArkChat\TimedCommandSettings.cs" />
+    <Compile Include="CrossArkChat\Startup.cs" />
+    <Compile Include="CrossArkChat\AssemblyUtils.cs" />
+    <Compile Include="CrossArkChat\DiscordLogServerityUtils.cs" />
+    <Compile Include="CrossArkChat\LatestUtils.cs" />
+    <Compile Include="CrossArkChat\ReconnectServerUtils.cs" />
+    <Compile Include="CrossArkChat\UpdateCheckerUtils.cs" />
+    <Compile Include="CrossArkChat\VersionUtils.cs" />
+    <Compile Include="CrossArkChat\Modules\CrossArkChatModule.cs" />
+    <Compile Include="CrossArkChat\Modules\DiscordModule.cs" />
+    <Compile Include="CrossArkChat\Modules\HelpModule.cs" />
+    <Compile Include="CrossArkChat\Modules\RconCommandModule.cs" />
+    <Compile Include="CrossArkChat\Modules\ServerQueryModule.cs" />
+    <Compile Include="CrossArkChat\Enums\SpecialRole.cs" />
+  </ItemGroup>
+</Project>
